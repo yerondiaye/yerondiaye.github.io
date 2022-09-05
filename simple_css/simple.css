@@ -23,15 +23,15 @@
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --bg: #212121;
-    --accent-bg: b5b3b3;
-    --text: #000;
-    --text-light: #000;
-    --border: #626161;
-    --accent: #ffb300;
-    --code: #f06292;
-    --preformatted: #ccc;
-    --disabled: #111;
+  --bg: #d9d9d9;
+  --accent-bg: #b5b3b3;
+  --text: #000;
+  --text-light: #000;
+  --border: #353535;
+  --accent: #0d47a1;
+  --code: #d81b60;
+  --preformatted: #444;
+   --disabled: #111;
   }
   /* Add a bit of transparency so light media isn't so glaring in dark mode */
   img,
