@@ -252,7 +252,7 @@ small {
     color: var(--color-text-secondary);
 }
 
-sup {
+/*sup {
     background-color: var(--color-secondary);
     border-radius: var(--border-radius);
     color: var(--color-bg);
@@ -262,7 +262,7 @@ sup {
     padding: 0.2rem 0.3rem;
     position: relative;
     top: -2px;
-}
+}*/
 
 /* Links */
 a {
