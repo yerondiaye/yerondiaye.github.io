@@ -1,0 +1,131 @@
+/* Custom styles for Yero Ndiaye's academic website */
+
+/* Profile image float */
+img.profile-float {
+    float: right;
+    max-width: 280px;
+    border-radius: 8px;
+    margin: 0 0 1.5rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* Highlighted section (job market paper) */
+.highlight {
+    background-color: #f8f9fa;
+    border-left: 0.4em solid #118bee;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    font-size: 0.95em;
+}
+
+.highlight h4 {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
+
+.highlight .subtitle {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-bottom: 0.8rem;
+}
+
+.highlight .tags {
+    color: #999;
+    font-size: 0.85em;
+}
+
+/* Card grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+    margin: 2rem 0;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.card h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #444;
+    margin-bottom: 0.8rem;
+}
+
+.card a.btn {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border: 1px solid #118bee;
+    border-radius: 5px;
+    color: #118bee;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background 0.2s, color 0.2s;
+    margin-right: 0.3rem;
+}
+
+.card a.btn:hover {
+    background: #118bee;
+    color: #fff;
+}
+
+.card a.btn-secondary {
+    border-color: #666;
+    color: #666;
+}
+
+.card a.btn-secondary:hover {
+    background: #666;
+    color: #fff;
+}
+
+/* Section dividers */
+section.about-section {
+    margin-bottom: 2rem;
+}
+
+section.about-section h3 {
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* Kickboxing brief on front page */
+.kickboxing-brief {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0;
+    font-size: 0.95em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    img.profile-float {
+        float: none;
+        display: block;
+        margin: 0 auto 1.5rem auto;
+        max-width: 100%;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
