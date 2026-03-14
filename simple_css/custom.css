@@ -1,5 +1,19 @@
 /* Custom styles for Yero Ndiaye's academic website */
 
+/* Allow links to wrap normally (mvp.css sets inline-block which prevents line breaks) */
+main a {
+    display: inline !important;
+}
+
+/* Left-align headings in main content (mvp.css centers them) */
+main h3, main h4 {
+    text-align: left;
+}
+
+.highlight h4 {
+    text-align: left;
+}
+
 /* Profile image float */
 img.profile-float {
     float: right;
