@@ -16,7 +16,6 @@
     --color-text-secondary: #999;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --hover-brightness: 1.2;
-    --justify-important: center;
     --justify-normal: left;
     --line-height: 1.5;
     --width-card: 285px;
@@ -76,7 +75,6 @@ hr {
 section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: var(--justify-important);
 }
 
 section img,
@@ -110,10 +108,6 @@ article header,
 div header,
 main header {
     padding-top: 0;
-}
-
-header {
-    text-align: var(--justify-important);
 }
 
 header a b,
@@ -440,7 +434,6 @@ table td,
 table th,
 table tr {
     padding: 0.4rem 0.8rem;
-    text-align: var(--justify-important);
 }
 
 table thead {
@@ -477,7 +470,6 @@ blockquote {
     margin: 1rem auto;
     max-width: var(--width-card-medium);
     padding: 1.5rem 1rem;
-    text-align: var(--justify-important);
 }
 
 blockquote footer {
