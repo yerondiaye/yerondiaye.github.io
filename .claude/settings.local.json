@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(pdftotext:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(git checkout:*)",
+      "Bash(cp:*)",
+      "Bash(make:*)",
+      "Bash(for page:*)"
     ]
   }
 }

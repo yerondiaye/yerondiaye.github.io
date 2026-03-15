@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{{!!title!!}}</title>
+        <meta name="google-site-verification" content="R4R77JOJ_MaGrfRRSPhHNs41imKtuz_tFFMp_EmiwlM" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="cyc"/>
+        <link rel="stylesheet" href="{{##.slab##}}/bootstrap.min.css">
+        <link rel="stylesheet" href="{{##.slab##}}/style.css">
+    </head>
+    <body>
+        {{##menu.html##}}
+
+        <main class="container mb-5">
+            {{!!body!!}}
+        </main>
+
+        {{##footer.html##}}
+
+        <script src="{{##.slab##}}/bootstrap.bundle.min.js"></script>
+        <script>
+            (function () {
+                var path = location.pathname.replace(/\/$/, '').split('/').pop() || 'index';
+                document.querySelectorAll('.nav-link[data-page]').forEach(function (a) {
+                    if (a.getAttribute('data-page') === path) a.classList.add('active');
+                });
+            })();
+        </script>
+    </body>
+</html>

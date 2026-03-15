@@ -1,2 +1,5 @@
-    .claude
-	_site/
+.claude
+public
+*.posts
+bin/replace
+bin/mtime
