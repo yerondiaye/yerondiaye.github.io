@@ -1,5 +1,2 @@
-.claude
-public
-*.posts
-bin/replace
-bin/mtime
+    .claude
+	_site/
