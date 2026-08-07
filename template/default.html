@@ -1,19 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
     <head>
         <title>{{!!title!!}}</title>
         <meta name="google-site-verification" content="R4R77JOJ_MaGrfRRSPhHNs41imKtuz_tFFMp_EmiwlM" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="cyc"/>
-        <script>
-            (function () {
-                var savedTheme;
-                try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
-                var theme = savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-                document.documentElement.setAttribute('data-bs-theme', theme);
-            })();
-        </script>
         <link rel="stylesheet" href="{{##.slab##}}/bootstrap.min.css">
         <link rel="stylesheet" href="{{##.slab##}}/style.css">
         <style>
@@ -53,35 +45,6 @@
                 document.querySelectorAll('.nav-link[data-page]').forEach(function (a) {
                     if (a.getAttribute('data-page') === path) a.classList.add('active');
                 });
-
-                var toggle = document.getElementById('theme-toggle');
-                var systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-                function updateToggle() {
-                    var isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark';
-                    toggle.textContent = isDark ? '☀' : '☾';
-                    toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-                    toggle.setAttribute('title', isDark ? 'Light mode' : 'Dark mode');
-                }
-
-                toggle.addEventListener('click', function () {
-                    var isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark';
-                    var theme = isDark ? 'light' : 'dark';
-                    document.documentElement.setAttribute('data-bs-theme', theme);
-                    try { localStorage.setItem('theme', theme); } catch (e) {}
-                    updateToggle();
-                });
-
-                systemTheme.addEventListener('change', function (event) {
-                    var savedTheme;
-                    try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
-                    if (!savedTheme) {
-                        document.documentElement.setAttribute('data-bs-theme', event.matches ? 'dark' : 'light');
-                        updateToggle();
-                    }
-                });
-
-                updateToggle();
             })();
         </script>
     </body>
