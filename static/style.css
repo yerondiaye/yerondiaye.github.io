@@ -10,6 +10,30 @@ body {
     font-family: var(--bs-body-font-family);
 }
 
+/* Light/dark theme toggle */
+.theme-toggle {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    color: var(--bs-navbar-color);
+    background: transparent;
+    font-size: 1.15rem;
+    line-height: 2rem;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    color: var(--bs-navbar-hover-color);
+    background-color: var(--bs-tertiary-bg);
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+}
+
 /* Profile image float */
 img.profile-float {
     float: right;
@@ -54,6 +78,23 @@ img.profile-float {
     padding: 1.2rem 1.5rem;
     margin: 1.5rem 0;
     font-size: 0.95em;
+}
+
+[data-bs-theme="dark"] .highlight,
+[data-bs-theme="dark"] .kickboxing-brief {
+    background-color: var(--bs-tertiary-bg);
+}
+
+[data-bs-theme="dark"] .highlight .subtitle {
+    color: var(--bs-secondary-color);
+}
+
+[data-bs-theme="dark"] .highlight .tags {
+    color: var(--bs-tertiary-color);
+}
+
+[data-bs-theme="dark"] .section-divider {
+    border-bottom-color: var(--bs-border-color);
 }
 
 /* Sticky navbar */
