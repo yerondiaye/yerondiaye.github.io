@@ -56,23 +56,6 @@ img.profile-float {
     font-size: 0.95em;
 }
 
-[data-bs-theme="dark"] .highlight,
-[data-bs-theme="dark"] .kickboxing-brief {
-    background-color: var(--bs-tertiary-bg);
-}
-
-[data-bs-theme="dark"] .highlight .subtitle {
-    color: var(--bs-secondary-color);
-}
-
-[data-bs-theme="dark"] .highlight .tags {
-    color: var(--bs-tertiary-color);
-}
-
-[data-bs-theme="dark"] .section-divider {
-    border-bottom-color: var(--bs-border-color);
-}
-
 /* Sticky navbar */
 .navbar {
     position: sticky;
